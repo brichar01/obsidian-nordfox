@@ -109,3 +109,11 @@
 	--text-highlight-bg: #4f6074;
 	--blockquote-background-color: rgb(var(--color-blue-rgb), 4%);
 }
+
+/* -------------------------------------------------------------------
+ * Vim mode block cursor overrides
+ * ------------------------------------------------------------------- */
+.theme-dark .cm-fat-cursor {
+	--interactive-accent: var(--color-base-100); /* fg1 */
+	--text-on-accent: var(--color-base-10); /* bg1 */
+}
