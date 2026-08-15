@@ -25,9 +25,10 @@
 	--color-base-100: #cdcecf; 
 
 	/*
-	 * Non-standard rung used for headings and bold. 
+	 * Non-standard rung used for headings. fg0 measures fractionally
+	 * darker than fg1; that inversion is intended.
 	 */
-	--color-base-110: #e5e9f0; /* white.base */
+	--color-base-110: #c7cdd9; /* fg0 */
 	--mono-rgb-0: 35, 40, 49;
 	--mono-rgb-100: 205, 206, 207;
 
@@ -97,7 +98,8 @@
 	--h4-color: var(--heading-color);
 	--h5-color: var(--heading-color);
 	--h6-color: var(--heading-color);
-	--bold-color: var(--color-base-110);
+
+	--bold-color: #e5e9f0; /* white.base */
 
 
 	/* ---------------------------------------------------------------
