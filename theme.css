@@ -1,34 +1,109 @@
-body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
-}
+/*
+ * NordFox for Obsidian
+ *
+ * Ported from the nordfox palette in nightfox.nvim:
+ * https://github.com/EdenEast/nightfox.nvim/blob/main/lua/nightfox/palette/nordfox.lua
+ *
+ * Dark mode only. 
+ */
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
-}
+.theme-dark {
+	/* ---------------------------------------------------------------
+	 * Neutral ramp
+	 * --------------------------------------------------------------- */
+	--color-base-00: #232831; 
+	--color-base-05: #272d37; 
+	--color-base-10: #2e3440; 
+	--color-base-20: #39404f; 
+	--color-base-25: #3b4252; 
+	--color-base-30: #444c5e; 
+	--color-base-35: #5a657d; 
+	--color-base-40: #60728a; 
+	--color-base-50: #6f7a89; 
+	--color-base-60: #7e8188; 
+	--color-base-70: #abb1bb; 
+	--color-base-100: #cdcecf; 
 
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
-}
+	/*
+	 * Non-standard rung used for headings and bold. 
+	 */
+	--color-base-110: #e5e9f0; /* white.base */
+	--mono-rgb-0: 35, 40, 49;
+	--mono-rgb-100: 205, 206, 207;
 
-.menu {
-	padding: var(--size-2-1);
-}
+	/* ---------------------------------------------------------------
+	 * Accent
+	 * --------------------------------------------------------------- */
+	--accent-h: 210;
+	--accent-s: 34%;
+	--accent-l: 63%;
 
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
-}
+	/* ---------------------------------------------------------------
+	 * Extended hues
+	 *
+	 * Modifications from base: made pink and purple more distinguishable
+	 * --------------------------------------------------------------- */
+	--color-red: #bf616a;
+	--color-orange: #c9826b;
+	--color-yellow: #ebcb8b;
+	--color-green: #a3be8c;
+	--color-cyan: #88c0d0;
+	--color-blue: #81a1c1;
+	--color-purple: #b48ead; 
+	--color-pink: #d092ce; 
+	--color-red-rgb: 191, 97, 106;
+	--color-orange-rgb: 201, 130, 107;
+	--color-yellow-rgb: 235, 203, 139;
+	--color-green-rgb: 163, 190, 140;
+	--color-cyan-rgb: 136, 192, 208;
+	--color-blue-rgb: 129, 161, 193;
+	--color-purple-rgb: 180, 142, 173;
+	--color-pink-rgb: 208, 146, 206;
 
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+	/* ---------------------------------------------------------------
+	 * Surfaces
+	 * --------------------------------------------------------------- */
+	--background-primary: var(--color-base-10);
+	--background-primary-alt: var(--color-base-05);
+	--background-secondary: var(--color-base-05);
+	--background-secondary-alt: var(--color-base-00);
+	--background-modifier-border: var(--color-base-25);
+	--background-modifier-border-hover: var(--color-base-30);
+	--background-modifier-border-focus: var(--color-base-35);
+	--titlebar-background: var(--color-base-00);
+	--titlebar-background-focused: var(--color-base-00);
+	--ribbon-background: var(--color-base-00);
+	--ribbon-background-collapsed: var(--color-base-05);
+	--modal-border-color: var(--color-base-30);
+	--code-background: var(--color-base-05);
+	--code-inline-background: var(--code-background);
+	--table-header-background: var(--color-base-05);
+	--table-header-background-hover: var(--color-base-05);
+
+	/* ---------------------------------------------------------------
+	 * Text
+	 * --------------------------------------------------------------- */
+	--text-muted: var(--color-base-70);
+	--text-on-accent: var(--color-base-00); 
+	--code-comment: #60728a;
+
+	/* ---------------------------------------------------------------
+	 * Headings
+	 * --------------------------------------------------------------- */
+	--heading-color: var(--color-base-110);
+	--h1-color: var(--heading-color);
+	--h2-color: var(--heading-color);
+	--h3-color: var(--heading-color);
+	--h4-color: var(--heading-color);
+	--h5-color: var(--heading-color);
+	--h6-color: var(--heading-color);
+	--bold-color: var(--color-base-110);
+
+
+	/* ---------------------------------------------------------------
+	 * Selections
+	 * --------------------------------------------------------------- */
+	--text-selection: #3e4a5b;
+	--text-highlight-bg: #4f6074;
+	--blockquote-background-color: rgb(var(--color-blue-rgb), 4%);
 }
